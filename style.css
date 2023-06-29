@@ -1,65 +1,69 @@
-body
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
 .main
 {
+    width: 500px;
+    margin: 20px auto;
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+}
+.main img
+{
+    height: auto;
+    width: 100%;
+ 
 }
 
-.image-div
+main img:hover
 {
-    background-image: url(shiv-caption.jpg);
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
-    z-index: 1;  
-    border-radius: 10px;
-    height: 55vh;
-    width: 25vw;
-    
+    transform: scale(1.09);
 }
-.about-content
+.main h3
 {
-    font-weight: bolder;
-    position: absolute;
-    display: inline-block;
-    height: 55vh;
-    width: 25vw;
-    background-color: #87816f7a;
     text-align: center;
-    transition: linear;
-    z-index: 0;
-    border-radius: 10px;
+}
+.main .content
+{
+    font-size: larger;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: justify;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: #6b6d61b9;
+    height: 100%;
+    color: white;
+    transition: all .5s;
 }
 
-
-/* Social media icons */
-.fa 
+.main:hover .content
 {
-   background-color: black;
-   color: white;
-   padding-top: 10px;
-   margin-left: 15px;
-   font-size: 30px;
-   width: 25px;
-   text-decoration: none;
-   border-radius: 10%;
+    top:0
+}
+.main:hover .social-icons
+{
+    bottom: 0;
+}
+.main .social-icons
+{
+    /* border: 2px black solid; */
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: -100%;
+    padding: 0 0 10px 130px;
+    cursor: pointer;
+    transition: all .5s;
+   
+}
+.social-icons i
+{
+    margin: 0 15px;
    
 }
 
-/* animation effect */
-.image-div:hover 
+.social-icons i:hover
 {
-    opacity: 0.2;      
+   color: orange;
 }
+
 
