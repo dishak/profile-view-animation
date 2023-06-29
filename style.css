@@ -1,0 +1,65 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-div
+{
+    background-image: url(shiv-caption.jpg);
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;  
+    border-radius: 10px;
+    height: 55vh;
+    width: 25vw;
+    
+}
+.about-content
+{
+    font-weight: bolder;
+    position: absolute;
+    display: inline-block;
+    height: 55vh;
+    width: 25vw;
+    background-color: #87816f7a;
+    text-align: center;
+    transition: linear;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+/* Social media icons */
+.fa 
+{
+   background-color: black;
+   color: white;
+   padding-top: 10px;
+   margin-left: 15px;
+   font-size: 30px;
+   width: 25px;
+   text-decoration: none;
+   border-radius: 10%;
+   
+}
+
+/* animation effect */
+.image-div:hover 
+{
+    opacity: 0.2;      
+}
+
